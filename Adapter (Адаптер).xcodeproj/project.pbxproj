@@ -13,6 +13,9 @@
 		32C6DD1423FE72EE0003271F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6DD1223FE72EE0003271F /* Main.storyboard */; };
 		32C6DD1623FE72F00003271F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C6DD1523FE72F00003271F /* Assets.xcassets */; };
 		32C6DD1923FE72F00003271F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6DD1723FE72F00003271F /* LaunchScreen.storyboard */; };
+		32FEDDE623FE8164009C99FC /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEDDE523FE8164009C99FC /* GoogleAuth.swift */; };
+		32FEDDE823FE87B7009C99FC /* TwitterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEDDE723FE87B7009C99FC /* TwitterAuth.swift */; };
+		32FEDDEB23FE883E009C99FC /* AdapterAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FEDDEA23FE883E009C99FC /* AdapterAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		32C6DD1523FE72F00003271F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C6DD1823FE72F00003271F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C6DD1A23FE72F00003271F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FEDDE523FE8164009C99FC /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		32FEDDE723FE87B7009C99FC /* TwitterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuth.swift; sourceTree = "<group>"; };
+		32FEDDEA23FE883E009C99FC /* AdapterAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,27 @@
 				32C6DD1523FE72F00003271F /* Assets.xcassets */,
 				32C6DD1723FE72F00003271F /* LaunchScreen.storyboard */,
 				32C6DD1A23FE72F00003271F /* Info.plist */,
+				32FEDDE923FE881D009C99FC /* Auth */,
+				32FEDDEC23FE8D1B009C99FC /* Adapter */,
 			);
 			path = "Adapter (Адаптер)";
+			sourceTree = "<group>";
+		};
+		32FEDDE923FE881D009C99FC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				32FEDDE523FE8164009C99FC /* GoogleAuth.swift */,
+				32FEDDE723FE87B7009C99FC /* TwitterAuth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		32FEDDEC23FE8D1B009C99FC /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				32FEDDEA23FE883E009C99FC /* AdapterAuth.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C6DD1123FE72EE0003271F /* ViewController.swift in Sources */,
+				32FEDDEB23FE883E009C99FC /* AdapterAuth.swift in Sources */,
 				32C6DD0D23FE72EE0003271F /* AppDelegate.swift in Sources */,
+				32FEDDE623FE8164009C99FC /* GoogleAuth.swift in Sources */,
+				32FEDDE823FE87B7009C99FC /* TwitterAuth.swift in Sources */,
 				32C6DD0F23FE72EE0003271F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
